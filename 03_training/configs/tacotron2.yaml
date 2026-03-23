@@ -1,0 +1,88 @@
+# Tacotron2 Training Configuration
+# ==================================
+
+# Model Configuration
+model:
+  type: tacotron2
+  vocab_size: 100
+  n_mels: 80
+
+  # Encoder
+  encoder_embedding_dim: 512
+  encoder_hidden_dim: 512
+  encoder_n_convolutions: 3
+  encoder_kernel_size: 5
+
+  # Attention
+  attention_dim: 128
+  attention_location_features: 32
+  attention_location_kernel_size: 31
+
+  # Decoder
+  decoder_dim: 1024
+  prenet_dim: 256
+  max_decoder_steps: 1000
+  gate_threshold: 0.5
+
+  # Postnet
+  postnet_embedding_dim: 512
+  postnet_kernel_size: 5
+  postnet_n_convolutions: 5
+
+# Audio Configuration
+audio:
+  sample_rate: 22050
+  n_fft: 2048
+  hop_length: 256
+  win_length: 1024
+  n_mels: 80
+  f_min: 0.0
+  f_max: 8000.0
+
+# Training Configuration
+training:
+  epochs: 500
+  batch_size: 32
+  learning_rate: 1.0e-3
+  weight_decay: 1.0e-6
+  grad_clip: 1.0
+  warmup_steps: 4000
+
+  # Optimizer
+  optimizer: adam
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_eps: 1.0e-6
+
+  # Scheduler
+  scheduler: step
+  scheduler_step_size: 50000
+  scheduler_gamma: 0.5
+
+  # Mixed precision
+  use_amp: true
+
+# Checkpointing
+checkpoint:
+  dir: checkpoints/tacotron2
+  save_every: 1000
+  keep_last_n: 5
+
+# Logging
+logging:
+  log_every: 100
+  eval_every: 1000
+  use_tensorboard: true
+  use_wandb: false
+  wandb_project: tts-tacotron2
+
+# Data
+data:
+  train_dir: data/ljspeech
+  metadata_file: metadata.csv
+  language: en
+  use_phonemes: false
+  max_audio_len: 220500  # 10 seconds
+  max_text_len: 200
+  min_audio_len: 11025   # 0.5 seconds
+  num_workers: 4
