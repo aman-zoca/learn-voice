@@ -1,0 +1,76 @@
+{
+  "title": "The Science Fair Surprise",
+  "language": "english_indian",
+  "scenes": [
+    {
+      "speaker": "narrator",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "It was the day of the annual science fair at Delhi Public School. Little Arjun had been working on his project for two weeks."
+    },
+    {
+      "speaker": "arjun",
+      "voice": "kid",
+      "age": "child",
+      "mood": "excited",
+      "text": "Ma'am, ma'am! Look at my volcano! I made it with baking soda and vinegar! It really erupts, see!"
+    },
+    {
+      "speaker": "teacher",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "happy",
+      "text": "Very good, Arjun! But remember, the judges want to know the science behind it. Can you explain the chemical reaction?"
+    },
+    {
+      "speaker": "arjun",
+      "voice": "kid",
+      "age": "child",
+      "mood": "scared",
+      "text": "Umm... the baking soda and vinegar... they... umm... they don't like each other? So they fight and make bubbles?"
+    },
+    {
+      "speaker": "narrator",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "The teacher tried very hard not to laugh. She knelt down beside Arjun and helped him practice."
+    },
+    {
+      "speaker": "teacher",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "Listen carefully. Baking soda is a base, and vinegar is an acid. When they mix, they create carbon dioxide gas. That's what makes the bubbles. Say it with me."
+    },
+    {
+      "speaker": "arjun",
+      "voice": "kid",
+      "age": "child",
+      "mood": "calm",
+      "text": "Baking soda is a base... vinegar is an acid... they make carbon dioxide gas... and that's the bubbles!"
+    },
+    {
+      "speaker": "narrator",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "When the judges came, Arjun explained everything perfectly. His volcano erupted beautifully, and the judges were very impressed."
+    },
+    {
+      "speaker": "arjun",
+      "voice": "kid",
+      "age": "child",
+      "mood": "excited",
+      "text": "Ma'am! Ma'am! I got first prize! Thank you so much for helping me! You are the best teacher!"
+    },
+    {
+      "speaker": "teacher",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "happy",
+      "text": "You did all the hard work, Arjun. I am very proud of you. Now go celebrate with your friends!"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "The Missing Lunch",
+  "language": "english_us",
+  "scenes": [
+    {
+      "speaker": "narrator",
+      "voice": "man",
+      "age": "adult",
+      "mood": "calm",
+      "text": "It was a regular Monday morning at the office. Everything seemed normal, until lunchtime."
+    },
+    {
+      "speaker": "mike",
+      "voice": "man",
+      "age": "young",
+      "mood": "angry",
+      "text": "Alright, who took my lunch from the fridge? I had a perfectly good chicken sandwich in there, and now it's gone!"
+    },
+    {
+      "speaker": "sarah",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "Mike, calm down. Are you sure you didn't leave it at home? You forget things all the time."
+    },
+    {
+      "speaker": "mike",
+      "voice": "man",
+      "age": "young",
+      "mood": "angry",
+      "text": "No, Sarah! I specifically remember putting it on the second shelf! Someone in this office is a lunch thief!"
+    },
+    {
+      "speaker": "narrator",
+      "voice": "man",
+      "age": "adult",
+      "mood": "calm",
+      "text": "Mike stormed through the office, interrogating every single person. Meanwhile, Sarah decided to check the security cameras."
+    },
+    {
+      "speaker": "sarah",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "happy",
+      "text": "Mike... you might want to come see this. The camera shows YOU eating the sandwich at seven AM this morning. You came in early, ate it, and apparently forgot."
+    },
+    {
+      "speaker": "mike",
+      "voice": "man",
+      "age": "young",
+      "mood": "sad",
+      "text": "Oh no. I was on autopilot. I am so sorry everyone. I owe you all coffee."
+    },
+    {
+      "speaker": "sarah",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "excited",
+      "text": "Make mine a double espresso! And maybe label your lunch next time, genius."
+    },
+    {
+      "speaker": "narrator",
+      "voice": "man",
+      "age": "adult",
+      "mood": "happy",
+      "text": "And that's how Mike became the office legend. The man who stole his own lunch."
+    }
+  ]
+}

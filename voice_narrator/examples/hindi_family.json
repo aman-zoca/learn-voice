@@ -1,0 +1,69 @@
+{
+  "title": "आम के पेड़ की लड़ाई",
+  "language": "hindi",
+  "scenes": [
+    {
+      "speaker": "narrator",
+      "voice": "man",
+      "age": "adult",
+      "mood": "calm",
+      "text": "गर्मियों की एक दोपहर, छोटा राहुल अपने दादाजी के बगीचे में खेल रहा था। बगीचे में एक बहुत बड़ा आम का पेड़ था।"
+    },
+    {
+      "speaker": "rahul",
+      "voice": "kid",
+      "age": "child",
+      "mood": "excited",
+      "text": "दादाजी! दादाजी! देखो, पेड़ पर कितने सारे आम लगे हैं! क्या मैं एक तोड़ सकता हूँ?"
+    },
+    {
+      "speaker": "dadaji",
+      "voice": "grandpa",
+      "age": "elderly",
+      "mood": "happy",
+      "text": "हाँ बेटा, लेकिन ध्यान से। ये आम अभी कच्चे हैं, दो दिन और रुको तो मीठे हो जाएंगे।"
+    },
+    {
+      "speaker": "narrator",
+      "voice": "man",
+      "age": "adult",
+      "mood": "calm",
+      "text": "लेकिन राहुल से रुका नहीं गया। उसने चुपके से एक आम तोड़ लिया और खा लिया।"
+    },
+    {
+      "speaker": "rahul",
+      "voice": "kid",
+      "age": "child",
+      "mood": "sad",
+      "text": "छी! ये तो बहुत खट्टा है! मेरे मुँह में पानी आ गया!"
+    },
+    {
+      "speaker": "dadaji",
+      "voice": "grandpa",
+      "age": "elderly",
+      "mood": "angry",
+      "text": "मैंने कहा था ना, रुको! तुम बच्चे कभी सुनते ही नहीं हो! अब भुगतो!"
+    },
+    {
+      "speaker": "dadi",
+      "voice": "grandma",
+      "age": "elderly",
+      "mood": "calm",
+      "text": "अरे, इतना गुस्सा मत करो। बच्चा है, गलती करेगा तो सीखेगा। चलो राहुल, मैं तुम्हें गुड़ दे देती हूँ।"
+    },
+    {
+      "speaker": "rahul",
+      "voice": "kid",
+      "age": "child",
+      "mood": "happy",
+      "text": "थैंक यू दादी! अगली बार मैं ज़रूर रुकूंगा। पक्का वाला प्रॉमिस!"
+    },
+    {
+      "speaker": "narrator",
+      "voice": "man",
+      "age": "adult",
+      "mood": "calm",
+      "text": "और इस तरह राहुल ने सीखा कि सब्र का फल हमेशा मीठा होता है।"
+    }
+  ]
+}

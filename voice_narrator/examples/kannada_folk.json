@@ -1,0 +1,62 @@
+{
+  "title": "ಬುದ್ಧಿವಂತ ನರಿ",
+  "language": "kannada",
+  "scenes": [
+    {
+      "speaker": "narrator",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "ಒಂದು ಊರಿನಲ್ಲಿ ಒಂದು ಬುದ್ಧಿವಂತ ನರಿ ಇತ್ತು. ಅದಕ್ಕೆ ಬಹಳ ಹಸಿವಾಗಿತ್ತು."
+    },
+    {
+      "speaker": "nari",
+      "voice": "man",
+      "age": "adult",
+      "mood": "sad",
+      "text": "ಅಯ್ಯೋ, ಮೂರು ದಿನದಿಂದ ಏನೂ ತಿಂದಿಲ್ಲ. ಎಲ್ಲಾದರೂ ಆಹಾರ ಸಿಗಬೇಕು."
+    },
+    {
+      "speaker": "narrator",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "ಆಗ ನರಿಗೆ ಒಂದು ಕಾಗೆ ಕಾಣಿಸಿತು. ಕಾಗೆ ಬಾಯಲ್ಲಿ ಒಂದು ದೊಡ್ಡ ರೊಟ್ಟಿ ಇತ್ತು."
+    },
+    {
+      "speaker": "nari",
+      "voice": "man",
+      "age": "adult",
+      "mood": "excited",
+      "text": "ಓಹೋ! ಕಾಗೆ ಬಳಿ ರೊಟ್ಟಿ ಇದೆ! ನಾನು ಬುದ್ಧಿಯಿಂದ ಕೆಲಸ ಮಾಡಬೇಕು."
+    },
+    {
+      "speaker": "nari",
+      "voice": "man",
+      "age": "adult",
+      "mood": "happy",
+      "text": "ಕಾಗೆ ಅಣ್ಣಾ! ನಿಮ್ಮ ಹಾಡು ಬಹಳ ಚೆನ್ನಾಗಿರುತ್ತೆ! ಒಂದು ಹಾಡು ಹಾಡಿ ಅಂತ ಕೇಳಿಕೊಳ್ಳುತ್ತೇನೆ!"
+    },
+    {
+      "speaker": "ajji",
+      "voice": "grandma",
+      "age": "elderly",
+      "mood": "calm",
+      "text": "ಮಕ್ಕಳೇ, ಕಾಗೆ ಬಾಯಿ ತೆರೆಯಿತು, ರೊಟ್ಟಿ ಕೆಳಗೆ ಬಿತ್ತು, ನರಿ ತಿಂದು ಓಡಿ ಹೋಯಿತು."
+    },
+    {
+      "speaker": "mago",
+      "voice": "kid",
+      "age": "child",
+      "mood": "excited",
+      "text": "ಅಜ್ಜಿ! ನರಿ ತುಂಬಾ ತುಂಟ! ಕಾಗೆಗೆ ಗೊತ್ತಾಗಲಿಲ್ವಾ?"
+    },
+    {
+      "speaker": "ajji",
+      "voice": "grandma",
+      "age": "elderly",
+      "mood": "happy",
+      "text": "ಅದಕ್ಕೇ ಹೇಳೋದು ಮಗು, ಹೊಗಳಿಕೆಗೆ ಮರುಳಾಗಬಾರದು. ಬುದ್ಧಿ ಇರಬೇಕು!"
+    }
+  ]
+}
