@@ -1,0 +1,4 @@
+__pycache__/
+output/*.mp3
+output/*.wav
+.piper_models/
