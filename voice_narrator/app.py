@@ -38,10 +38,17 @@ VOICE_ICONS = {
 def load_example(example_name: str) -> str:
     """Load an example JSON story."""
     file_map = {
+        # Stories
         "Hindi - Family Drama (आम के पेड़ की लड़ाई)": "hindi_family.json",
         "Kannada - Folk Tale (ಬುದ್ಧಿವಂತ ನರಿ)": "kannada_folk.json",
         "English US - Office Comedy (The Missing Lunch)": "english_office.json",
         "English Indian - School Story (The Science Fair)": "english_indian_school.json",
+        # Tech Reviews
+        "Hindi - LG Fridge Review (Spaceship Hai!)": "tech_hindi_lg_fridge.json",
+        "Hindi - boAt Earbuds (999 Mein Itna?!)": "tech_hindi_boat_earbuds.json",
+        "English US - iPhone 16 Pro Review": "tech_english_iphone_review.json",
+        "English Indian - MacBook Air M3 Review": "tech_english_indian_macbook.json",
+        "Kannada - Samsung Washing Machine (ಅಜ್ಜಿ Review)": "tech_kannada_washing_machine.json",
     }
     filename = file_map.get(example_name)
     if filename:
@@ -328,12 +335,19 @@ with gr.Blocks(title="Multi-Voice Story Narrator") as app:
         with gr.Column(scale=1):
             example_dropdown = gr.Dropdown(
                 choices=[
+                    "--- Stories ---",
                     "Hindi - Family Drama (आम के पेड़ की लड़ाई)",
                     "Kannada - Folk Tale (ಬುದ್ಧಿವಂತ ನರಿ)",
                     "English US - Office Comedy (The Missing Lunch)",
                     "English Indian - School Story (The Science Fair)",
+                    "--- Tech Reviews ---",
+                    "Hindi - LG Fridge Review (Spaceship Hai!)",
+                    "Hindi - boAt Earbuds (999 Mein Itna?!)",
+                    "English US - iPhone 16 Pro Review",
+                    "English Indian - MacBook Air M3 Review",
+                    "Kannada - Samsung Washing Machine (ಅಜ್ಜಿ Review)",
                 ],
-                label="Load Example Story",
+                label="Load Example",
                 value=None,
             )
 

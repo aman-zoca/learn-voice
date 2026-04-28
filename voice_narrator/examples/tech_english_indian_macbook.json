@@ -1,0 +1,97 @@
+{
+  "title": "MacBook Air M3 - The Student's Dream Machine",
+  "language": "english_indian",
+  "scenes": [
+    {
+      "speaker": "ankita",
+      "voice": "woman",
+      "age": "young",
+      "mood": "excited",
+      "text": "Guys! I finally saved up and bought the MacBook Air M3! Six months of tutoring money, but oh my God, it was so worth it!"
+    },
+    {
+      "speaker": "vikram",
+      "voice": "man",
+      "age": "young",
+      "mood": "calm",
+      "text": "Ankita, you could have bought a Windows laptop for half the price. HP, Dell, so many options are there no?"
+    },
+    {
+      "speaker": "ankita",
+      "voice": "woman",
+      "age": "young",
+      "mood": "happy",
+      "text": "Vikram, my last HP laptop used to sound like a helicopter during video calls! My professor once asked if I was calling from an airport! This MacBook? Silent. Zero noise. Not even a fan inside!"
+    },
+    {
+      "speaker": "vikram",
+      "voice": "man",
+      "age": "young",
+      "mood": "scared",
+      "text": "No fan? Then it must overheat like crazy no?"
+    },
+    {
+      "speaker": "ankita",
+      "voice": "woman",
+      "age": "young",
+      "mood": "calm",
+      "text": "That's the beauty of the M3 chip! It's so efficient, it doesn't even need a fan. I run Figma, VS Code, Chrome with twenty tabs, and Spotify, all at the same time. Not even warm. My old laptop would have caught fire by now."
+    },
+    {
+      "speaker": "deepa",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "What about the battery? I'm a teacher and I need something that lasts the whole school day without charging."
+    },
+    {
+      "speaker": "ankita",
+      "voice": "woman",
+      "age": "young",
+      "mood": "excited",
+      "text": "Deepa ma'am, this is the best part! Eighteen hours of battery life! I charge it at night, and it lasts the entire next day! I haven't even unpacked the charger from my bag in two weeks!"
+    },
+    {
+      "speaker": "vikram",
+      "voice": "man",
+      "age": "young",
+      "mood": "calm",
+      "text": "Okay okay, but the display? My Dell has a 4K screen. Can Apple match that?"
+    },
+    {
+      "speaker": "ankita",
+      "voice": "woman",
+      "age": "young",
+      "mood": "happy",
+      "text": "Liquid Retina display, Vikram! The colors are so accurate that my design professor thought I was showing her work on an external monitor! And it weighs only 1.24 kg! My textbook weighs more than this laptop!"
+    },
+    {
+      "speaker": "deepa",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "happy",
+      "text": "That weight is impressive! I carry my laptop to school every day, my shoulder is paining from my current one. How much does it cost?"
+    },
+    {
+      "speaker": "ankita",
+      "voice": "woman",
+      "age": "young",
+      "mood": "calm",
+      "text": "Starting at 1,14,900 rupees. Yes, it's not cheap. But with student discount you get around 10,000 off! Plus this thing will easily last 6 to 7 years. My senior is still using a 2018 MacBook Air!"
+    },
+    {
+      "speaker": "vikram",
+      "voice": "man",
+      "age": "young",
+      "mood": "whispering",
+      "text": "Ankita, can you send me the Apple education store link? Asking for a friend obviously."
+    },
+    {
+      "speaker": "ankita",
+      "voice": "woman",
+      "age": "young",
+      "mood": "excited",
+      "text": "Ha! Another one converted! Link in the description everyone! If you're a student, a teacher, or anyone who wants a laptop that just works, the MacBook Air M3 is it! Subscribe for more honest reviews! Bye!"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "title": "LG Fridge Review - Bhai Ye Fridge Nahi Spaceship Hai!",
+  "language": "hindi",
+  "scenes": [
+    {
+      "speaker": "reviewer",
+      "voice": "man",
+      "age": "young",
+      "mood": "excited",
+      "text": "भाइयों और बहनों! आज हम रिव्यू करेंगे LG का नया smart fridge! और मैं कसम से बोल रहा हूँ, ये fridge नहीं है, ये spaceship है!"
+    },
+    {
+      "speaker": "wife",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "angry",
+      "text": "हाँ हाँ, spaceship! इसकी कीमत भी तो spaceship जैसी है! पचास हज़ार का fridge कौन लेता है?"
+    },
+    {
+      "speaker": "reviewer",
+      "voice": "man",
+      "age": "young",
+      "mood": "happy",
+      "text": "अरे सुनो तो! इसमें inverter compressor है। बिजली का बिल इतना कम आएगा कि तुम रो दोगी ख़ुशी से! पूरे महीने में सिर्फ तीन सौ रुपये!"
+    },
+    {
+      "speaker": "wife",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "calm",
+      "text": "अच्छा? सच में? मतलब AC से ज़्यादा fridge नहीं खाएगा?"
+    },
+    {
+      "speaker": "reviewer",
+      "voice": "man",
+      "age": "young",
+      "mood": "excited",
+      "text": "बिल्कुल नहीं! और सुनो, इसमें convertible feature है। फ्रीज़र को normal fridge बना सकते हो! Party के टाइम सारा space दोगुना! Chicken, paneer, cold drinks, सब कुछ!"
+    },
+    {
+      "speaker": "friend",
+      "voice": "man",
+      "age": "adult",
+      "mood": "happy",
+      "text": "भाई एक बात बता, Ice maker कैसा है? मेरे पुराने fridge में ice जमने में दो दिन लग जाते हैं!"
+    },
+    {
+      "speaker": "reviewer",
+      "voice": "man",
+      "age": "young",
+      "mood": "happy",
+      "text": "बस यही तो magic है! इसका ice maker सिर्फ दो घंटे में ice बनाता है! दो घंटे! गर्मी में ठंडा पानी कभी ख़त्म नहीं होगा!"
+    },
+    {
+      "speaker": "wife",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "excited",
+      "text": "रुको रुको! ये WiFi वाला feature क्या है? Fridge में WiFi? क्या fridge Instagram चलाएगा?"
+    },
+    {
+      "speaker": "reviewer",
+      "voice": "man",
+      "age": "young",
+      "mood": "happy",
+      "text": "हा हा नहीं! LG ThinQ app से तुम phone से temperature control कर सकते हो! Office में बैठे बैठे fridge check कर लो! और अगर door खुला रह गया तो notification आ जाएगा!"
+    },
+    {
+      "speaker": "wife",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "angry",
+      "text": "मतलब अब fridge भी मुझे notification देगा? पहले से husband के messages काफी नहीं थे?"
+    },
+    {
+      "speaker": "reviewer",
+      "voice": "man",
+      "age": "young",
+      "mood": "sad",
+      "text": "ये... ये personal attack था।"
+    },
+    {
+      "speaker": "friend",
+      "voice": "man",
+      "age": "adult",
+      "mood": "happy",
+      "text": "भाई भाभी ने तो roast कर दिया! लेकिन seriously, कितने साल की warranty है?"
+    },
+    {
+      "speaker": "reviewer",
+      "voice": "man",
+      "age": "young",
+      "mood": "excited",
+      "text": "दस साल की warranty compressor पर! दस साल! बच्चे बड़े हो जाएंगे, fridge चलता रहेगा! और build quality इतनी solid है, ये fridge तुमसे ज़्यादा reliable है!"
+    },
+    {
+      "speaker": "wife",
+      "voice": "woman",
+      "age": "adult",
+      "mood": "happy",
+      "text": "चलो ठीक है, मान गई। ये fridge ले लो। लेकिन अगला gadget मैं choose करूँगी!"
+    },
+    {
+      "speaker": "reviewer",
+      "voice": "man",
+      "age": "young",
+      "mood": "happy",
+      "text": "Done deal! तो दोस्तों, final verdict - LG का ये fridge पैसा वसूल है! Inverter compressor, convertible, WiFi, दस साल warranty! Link description में है, जाओ और grab करो! Like और subscribe करना मत भूलना!"
+    }
+  ]
+}
