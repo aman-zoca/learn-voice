@@ -9,7 +9,7 @@ from pathlib import Path
 import gradio as gr
 from pydub import AudioSegment
 
-from voice_narrator.engine import get_available_engines, get_engine_status, synthesize_scene
+from voice_narrator.engine import get_engine_status, synthesize_scene
 from voice_narrator.story_schema import Story
 
 EXAMPLES_DIR = Path(__file__).parent / "examples"
@@ -76,7 +76,7 @@ def validate_json(json_text: str) -> tuple[str, str]:
     return "✅ Valid story!", "\n".join(lines)
 
 
-def generate_scene_audio(json_text: str, scene_index: int, engine: str = "Edge TTS", progress=gr.Progress()):
+def generate_scene_audio(json_text: str, scene_index: int, progress=gr.Progress()):
     """Generate audio for a single scene."""
     try:
         data = json.loads(json_text)
@@ -88,7 +88,7 @@ def generate_scene_audio(json_text: str, scene_index: int, engine: str = "Edge T
         return None, f"❌ Invalid scene index: {scene_index}"
 
     scene = story.scenes[scene_index]
-    progress(0.3, desc=f"[{engine}] Generating: {scene.speaker}...")
+    progress(0.3, desc=f"Generating: {scene.speaker}...")
 
     try:
         audio_path = synthesize_scene(
@@ -97,14 +97,13 @@ def generate_scene_audio(json_text: str, scene_index: int, engine: str = "Edge T
             voice=scene.voice,
             age=scene.age,
             mood=scene.mood,
-            engine=engine,
         )
         progress(1.0, desc="Done!")
         icon = VOICE_ICONS.get(scene.voice, "🗣️")
         mood = MOOD_BADGES.get(scene.mood, scene.mood)
-        return audio_path, f"✅ [{engine}] {icon} {scene.speaker} [{mood}]"
+        return audio_path, f"✅ {icon} {scene.speaker} [{mood}]"
     except Exception as e:
-        return None, f"❌ [{engine}] Failed: {e}"
+        return None, f"❌ Failed: {e}"
 
 
 MOOD_COLORS = {
@@ -155,7 +154,7 @@ def _build_lyrics_html(story, scene_timestamps):
     return html
 
 
-def generate_all_audio(json_text: str, engine: str = "Edge TTS", progress=gr.Progress()):
+def generate_all_audio(json_text: str, progress=gr.Progress()):
     """Generate audio for all scenes and concatenate into one file.
     Returns (audio_path, status_log, lyrics_html).
     """
@@ -168,12 +167,12 @@ def generate_all_audio(json_text: str, engine: str = "Edge TTS", progress=gr.Pro
     audio_files = []
     scene_durations = []
     total = len(story.scenes)
-    status_lines = [f"Engine: **{engine}**", ""]
+    status_lines = []
 
     for i, scene in enumerate(story.scenes):
         icon = VOICE_ICONS.get(scene.voice, "🗣️")
         mood = MOOD_BADGES.get(scene.mood, scene.mood)
-        progress((i + 0.5) / total, desc=f"[{engine}] Scene {i+1}/{total}: {scene.speaker}...")
+        progress((i + 0.5) / total, desc=f"Scene {i+1}/{total}: {scene.speaker}...")
 
         try:
             audio_path = synthesize_scene(
@@ -182,7 +181,6 @@ def generate_all_audio(json_text: str, engine: str = "Edge TTS", progress=gr.Pro
                 voice=scene.voice,
                 age=scene.age,
                 mood=scene.mood,
-                engine=engine,
             )
             audio_files.append(audio_path)
             seg = AudioSegment.from_file(audio_path)
@@ -249,15 +247,7 @@ def update_scene_dropdown(json_text: str):
 
 # ── Build the UI ────────────────────────────────────────────────────
 
-available_engines = get_available_engines()
-engine_text = ", ".join(available_engines) if available_engines else "No engines available!"
-
-ENGINE_INFO = {
-    "Edge TTS": "Microsoft voices, best emotions via prosody, all Indian langs. Needs internet.",
-    "gTTS": "Google voices, simple & reliable, all Indian langs. Needs internet.",
-    "Piper": "Super fast, fully offline, English + Hindi only.",
-    "Silero": "Offline, Hindi + Kannada + more Indian langs, male/female voices.",
-}
+engine_text = "Edge TTS"
 
 
 APP_CSS = """
@@ -332,26 +322,6 @@ with gr.Blocks(title="Multi-Voice Story Narrator") as app:
             <p style="color: #666; font-size: 13px;">Engines: {engine_text}</p>
         </div>
     """)
-
-    # ── Engine Selector ──────────────────────────────────────────────
-    with gr.Row():
-        engine_radio = gr.Radio(
-            choices=available_engines,
-            value=available_engines[0] if available_engines else "Edge TTS",
-            label="TTS Engine",
-            info="Switch engines to compare voices. Each engine sounds different!",
-        )
-        engine_info = gr.Textbox(
-            value=ENGINE_INFO.get(available_engines[0], "") if available_engines else "",
-            label="Engine Info",
-            interactive=False,
-            lines=1,
-        )
-
-    def _update_engine_info(engine_name):
-        return ENGINE_INFO.get(engine_name, "")
-
-    engine_radio.change(fn=_update_engine_info, inputs=[engine_radio], outputs=[engine_info])
 
     with gr.Row():
         # ── Left Panel: JSON Editor ────────────────────────────────
@@ -529,22 +499,22 @@ Now write me a story. I'll tell you the topic, language, and how many characters
     )
 
     # Play single scene
-    def _play_scene(json_text, scene_choice, engine):
+    def _play_scene(json_text, scene_choice):
         if not scene_choice:
             return None, "⚠️ Select a scene first."
         idx = int(scene_choice.split(":")[0])
-        return generate_scene_audio(json_text, idx, engine=engine)
+        return generate_scene_audio(json_text, idx)
 
     play_scene_btn.click(
         fn=_play_scene,
-        inputs=[json_input, scene_dropdown, engine_radio],
+        inputs=[json_input, scene_dropdown],
         outputs=[scene_audio, scene_status],
     )
 
     # Play all scenes (JS highlighter is embedded in the lyrics HTML)
     play_all_btn.click(
         fn=generate_all_audio,
-        inputs=[json_input, engine_radio],
+        inputs=[json_input],
         outputs=[full_audio, full_status, lyrics_panel],
     )
 
